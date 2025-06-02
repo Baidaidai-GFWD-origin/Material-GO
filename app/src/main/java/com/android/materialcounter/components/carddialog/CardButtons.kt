@@ -21,7 +21,8 @@ fun CardButtons(
 ){
     Row(
         modifier = modifier
-            .fillMaxWidth(),
+            .fillMaxWidth()
+        ,
         horizontalArrangement = Arrangement.End
     ) {
         TextButton(
@@ -29,13 +30,17 @@ fun CardButtons(
         ) {
             Text(
                 text = "Dismiss",
-                color = MaterialTheme.colorScheme.error
+                color = MaterialTheme.colorScheme.error,
+                style = MaterialTheme.typography.titleMedium
             )
         }
         TextButton(
             onClick = confirmClicker,
         ) {
-            Text(text = "Confirm")
+            Text(
+                text = "Confirm",
+                style = MaterialTheme.typography.titleMedium
+            )
         }
 
     }
